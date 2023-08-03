@@ -1,5 +1,11 @@
 .header {
     display: flex;
     justify-content: center;
-    border: 10px forestgreen solid;
+    border: 5px forestgreen solid;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    border: 5px forestgreen solid;
 }
