@@ -1,0 +1,5 @@
+.header {
+    display: flex;
+    justify-content: center;
+    border: 10px forestgreen solid;
+}
