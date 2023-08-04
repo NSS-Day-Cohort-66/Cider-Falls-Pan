@@ -1,4 +1,9 @@
-import { getAreas, getServices, getAreaServices, getGuests } from "./database.js";
+import {
+  getAreas,
+  getServices,
+  getAreaServices,
+  getGuests,
+} from "./database.js";
 
 const guests = getGuests()
 const areas = getAreas()
