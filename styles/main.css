@@ -7,7 +7,9 @@
 .footer {
   display: flex;
   justify-content: space-around;
-  border: 5px forestgreen solid;
+  border: 4px solid #5b4b45;
+  background-color: #ab692b;
+  color: #eaeaea;
 }
 
 #services_list {
@@ -15,8 +17,8 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  border: 3px greenyellow solid;
-  background-color: rgb(52, 68, 52);
+  border: 4px solid #5b4b45;
+  background-color: #ab692b;
 }
 
 #services_ul {
