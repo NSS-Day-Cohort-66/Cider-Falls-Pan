@@ -5,9 +5,9 @@ const areaServices = getAreaServices();
 const areas = getAreas();
 
 export const servicesList = () => {
-  let html = `<ul>`;
+  let html = `<ul id="services_ul">`;
   for (const service of services) {
-    html += `<li data-type="service" data-id="${service.id}" data-name="${service.name}">${service.name}</li>`;
+    html += `<li data-type="service" data-id="${service.id}" data-name="${service.name}" class="service">${service.name}</li>`;
   }
   html += `</ul>`;
   return html;
