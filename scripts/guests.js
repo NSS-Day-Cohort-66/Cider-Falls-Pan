@@ -8,4 +8,5 @@ export const guestList = () => {
     html += `<li class="address">${guest.firstName} ${guest.lastName}</li>`;
   }
   html += `</ul>`;
+  return html;
 };
