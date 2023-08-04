@@ -1,23 +1,24 @@
-import { getAreas, getServices, getAreaServices, getGuests } from "./database.js";
+import {
+  getAreas,
+  getServices,
+  getAreaServices,
+  getGuests,
+} from "./database.js";
 
-const guests = getGuests()
+const guests = getGuests();
 
-document.addEventListener(
-    "click",
-    (clickEvent) => {
-        const clickTarget = clickEvent.target
-        if (clickTarget.dataset.type === "title") {
-            let count = 0
-            for (const guest of guests) {
-                if (guest.areaId === parseInt(clickTarget.dataset.id)) {
-                    count++
-                }
-            }
-            window.alert(`There are ${output} guests in this area.`)
-        }
-    } 
-)
-import { getAreas, getServices, getAreaServices } from "./database.js";
+document.addEventListener("click", (clickEvent) => {
+  const clickTarget = clickEvent.target;
+  if (clickTarget.dataset.type === "title") {
+    let count = 0;
+    for (const guest of guests) {
+      if (guest.areaId === parseInt(clickTarget.dataset.id)) {
+        count++;
+      }
+    }
+    window.alert(`There are ${output} guests in this area.`);
+  }
+});
 
 const connectServiceToArea = (areaService, Services) => {
   for (const service of Services) {
