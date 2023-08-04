@@ -1,4 +1,11 @@
+import { northWestService } from "./destinations.js";
 import { servicesList } from "./services.js";
+
+const destinationsDisplay = northWestService();
+
+const areasHTML = document.querySelector("#area_list");
+
+areasHTML.innerHTML = destinationsDisplay;
 
 const servicesDisplay = servicesList();
 
