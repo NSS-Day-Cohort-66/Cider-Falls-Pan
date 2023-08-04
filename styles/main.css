@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: center;
-  border: 5px forestgreen solid;
+  background-color: bisque;
 }
 
 .footer {
@@ -31,4 +31,8 @@
   flex-basis: 2em;
   margin: 0.5em 2em 0em 2em;
   color: #eaeaea;
+}
+
+body {
+  background-color: bisque;
 }
