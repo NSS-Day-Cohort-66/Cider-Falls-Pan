@@ -18,11 +18,11 @@ document.addEventListener(
         if (clickTarget.dataset.type === "title") {
             let count = 0
             for (const guest of guests) {
-                if (guest.areaId === parseInt(clickTarget.dataset.id)) {
+                if (guest.parkId === parseInt(clickTarget.dataset.id)) {
                     count++
                 }
             }
-            window.alert(`There are ${output} guests in this area.`)
+            window.alert(`There are ${count} guests in this area.`)
         }
     } 
 )
@@ -31,7 +31,7 @@ export const areaList = () => {
   let htmlString = `<div class="area-container">`
   for (const area of areas) {
     htmlString += `<div class="area-card">
-    <h3 data-type="title">${area.name}</h3>
+    <h3 data-type="title" data-id="${area.id}">${area.name}</h3>
     <ul>`
     for (const item of areaServices) {
       if (item.areaId === area.id) {
