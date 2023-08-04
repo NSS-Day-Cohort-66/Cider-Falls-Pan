@@ -50,3 +50,34 @@ body {
   padding: 10px;
   border: 2px solid whitesmoke;
 }
+
+#body_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#area_list {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 40% 40%;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 12px;
+  margin-top: 60px;
+}
+
+h3 {
+  text-align: center;
+  color: #1a1614;
+}
+
+.area-card {
+  margin: 2em;
+  background: #5b4b45;
+  border-radius: 10px;
+  border: 2px solid whitesmoke;
+  padding: 2em;
+  color: whitesmoke;
+}
