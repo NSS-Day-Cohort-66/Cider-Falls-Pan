@@ -17,7 +17,6 @@ document.addEventListener(
         }
     } 
 )
-import { getAreas, getServices, getAreaServices } from "./database.js";
 
 const connectServiceToArea = (areaService, Services) => {
   for (const service of Services) {
